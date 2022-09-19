@@ -8,8 +8,17 @@ body {
   width: 5000px;
 }
 </style>
-
-<body onload="setTime(function(){window.scrollTo(0,1)},100)">
+<script>
+  window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+		// Hide the address bar!
+		window.scrollTo(0, 1);
+	}, 0);
+});
+</script>
+<body>
+  
 <p1>"Hi"</p1>
 </body>
 </html>
