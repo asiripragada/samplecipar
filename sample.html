@@ -6,19 +6,7 @@ body {
 }
 </style>
 
-<body>
-<h1>The Window Object</h1>
-<h2>The scrollTo() Method</h2>
-
-<p>Click to scroll the document.</p>
-
-<button onclick="scrollWin()" style="position:fixed">Scroll to 200 horizontally!</button><br><br>
-
-<script>
-function scrollWin() {
-  window.scrollTo(0,1);
-}
-</script>
-
+<body onload="setTime(function(){window.scrollTo(0,1)},100)">
+<p1>"Hi"</p1>
 </body>
 </html>
